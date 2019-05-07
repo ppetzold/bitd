@@ -1,0 +1,25 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "no-inferrable-types": [true],
+    "max-line-length": [false],
+    "array-type": [true, "array"],
+    "comment-format": [true, "check-space"],
+    "interface-over-type-literal": true,
+    "prefer-for-of": true,
+    "object-literal-shorthand": true,
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "prefer-method-signature": true,
+    "switch-default": false,
+    "interface-name": [true, "never-prefix"],
+    "no-var-requires": false,
+    "no-namespace": [false],
+    "member-access": [false],
+    "object-literal-sort-keys": false,
+    "no-shadowed-variable": false,
+    "member-ordering": [false],
+    "no-console": false,
+    "variable-name": false,
+    "typedef": [true, "call-signature"]
+  }
+}

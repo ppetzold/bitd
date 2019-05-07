@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es2016", "dom", "es2017", "esnext.asynciterable"],
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": false,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "outDir": "dist",
+    "noErrorTruncation": true,
+    "strictFunctionTypes": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true
+  },
+  "include": ["src"]
+}
