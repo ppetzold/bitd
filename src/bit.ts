@@ -9,7 +9,7 @@ import mingo from 'mingo'
 const jq = require('bigjq')
 const bcode = require('bcode')
 
-const Filter = require('./bitdb.json')
+const Filter = require('../bitdb.json')
 
 let Db: any
 let Info: any

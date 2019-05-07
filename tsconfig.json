@@ -21,7 +21,7 @@
     "noErrorTruncation": true,
     "strictFunctionTypes": true,
     "noUnusedParameters": true,
-    "noImplicitThis": true
-  },
-  "include": ["src"]
+    "noImplicitThis": true,
+    "rootDir": "src"
+  }
 }

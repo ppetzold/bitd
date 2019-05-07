@@ -1,6 +1,6 @@
 require('dotenv').config()
 import Config from './config'
-const Filter = require('./bitdb.json')
+const Filter = require('../bitdb.json')
 import * as ip from 'ip'
 import * as Bit from './bit'
 import * as Db from './db'

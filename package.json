@@ -2,16 +2,18 @@
   "name": "bitd",
   "version": "0.2.1",
   "description": "decentralized autonomous database over bitcoin",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "author": "21 Century Motor Company",
   "license": "MIT",
   "scripts": {
-    "lint": "npm run prettier && npm run tslint",
-    "tslint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'",
-    "prettier": "prettier --config .prettierrc --write --list-different \"**/{*.{ts,json,js,md,yml},*.*.yml}\"",
     "build": "tsc",
     "watch": "tsc -w",
-    "start": "node index"
+    "clean": "rimraf dist",
+    "start": "npm run build && node ./dist/index.js",
+    "test": "mocha \"dist/test/**/*.test.js\" --exit --timeout 5000 --require source-map-support/register",
+    "lint": "npm run tslint && npm run prettier",
+    "tslint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts'",
+    "prettier": "prettier --config .prettierrc --write --list-different \"**/{*.{ts,json,js,md,yml},*.*.yml}\""
   },
   "dependencies": {
     "bcode": "0.0.6",

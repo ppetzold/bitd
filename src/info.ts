@@ -1,6 +1,6 @@
 const level = require('level')
 const kv = level('./.state')
-const Filter = require('./bitdb.json')
+const Filter = require('../bitdb.json')
 /**
  * Return the last synchronized checkpoint
  */
