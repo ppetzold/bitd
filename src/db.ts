@@ -5,10 +5,10 @@ export interface DbConfig {
     url: string
     index: {
         [collection: string]: {
-            keys: string[];
-            fulltext: string[];
+            keys: string[]
+            fulltext: string[]
         }
-    };
+    }
 }
 
 let db: Db
