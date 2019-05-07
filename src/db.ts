@@ -209,8 +209,3 @@ export const block = {
         }
     },
 }
-
-
-export default {
-    init
-}
